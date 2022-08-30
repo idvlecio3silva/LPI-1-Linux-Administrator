@@ -1,0 +1,160 @@
+# 103.1 Trabalhar na Linha de Comandos
+
+## Informações sobre o sistema
+
+### Comando `pwd`
+
+- Permite nos localizar ou saber em que parte do sistema de arquivo nos encontramos.
+- Sintaxe**:** `$ pwd`
+
+![pwd.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05572986-c8d7-42b4-8d74-725e82b618ae/pwd.png)
+
+### Comando `touch`
+
+- Criar arquivos vazios
+- Sintaxe**:** `$ touch arquivo`
+
+![touch.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0722802f-c976-4601-a6e6-81e5de6f61ae/touch.png)
+
+### Comando `uname`
+
+- Exibe informações do Linux.
+- Sintaxe: **`$** uname -a`
+
+![uname -a.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5463306-95b7-4241-956f-6e81a34fb663/uname_-a.png)
+
+## Informações sobre Comandos
+
+### Comando `man`
+
+- Exibe informações como o nome do comando, breve sinopse de seu uso, uma descrição mais detalhada e alguns dados importantes sobre o histórico e as licenças de uso.
+- Sintaxe: `$ man nome-do-comando`
+
+![man uname.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32c2114a-7582-432a-9357-99fd54bd8ba1/man_uname.png)
+
+O comando `man`só funciona quando fornecemos um nome de comando exacto.
+
+### Comando `apropos`
+
+- Mostra comandos através da informação nas páginas do comando `man`.
+- Sintaxe: ****`$ apropos palavra-chave do comando`
+
+![apropos information.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd71dddc-d3b1-497c-ab49-5dbc06e619fa/apropos_information.png)
+
+### Comando `type`
+
+- É usado quando não se precisa da documentação completa de um comando, apenas de dados básicos.
+- Sintaxe: `$ type nome-do-comando`
+
+![type uname.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bbeccd8-4a11-4dd0-b7c9-dcdd035f42e5/type_uname.png)
+
+O comando `type` pode ser usado para consultar vários comandos separados em simultâneo.
+
+![type uname ls clear pwd.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6378e53-d42b-40f9-80e1-fefd6adfc055/type_uname_ls_clear_pwd.png)
+
+### Comando `which`
+
+- Exibe o caminho absoluto de um comando
+- Sintaxe: `$ which nome-do-comando`
+
+![which uname.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b28b90a9-243b-466b-b8ff-99d9777fda0f/which_uname.png)
+
+### **Comando `help`**
+
+- Mostra uma lista de ajudas do comando
+- Sintaxe: `$ nome-do-comando --help`
+
+![uname --help.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac0854f0-7581-41c0-b58f-69d568951a3f/uname_--help.png)
+
+### **Comando `whatis`**
+
+- Informa o que o comando faz
+- Sintaxe: `$ whatis nome-do-comando`
+
+![whatis uname.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3bba3e54-f994-4f14-b9b8-a99207c52fe9/whatis_uname.png)
+
+### Comando `alias`
+
+- Cria apelidos para os comandos.
+- Sintaxe: `$ alias apelido="comando-a-ser-executado"`
+
+![alias ida='pwd'.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac898fbb-2f8e-4292-8eda-9cda9fcf02a7/alias_idapwd.png)
+
+## Histórico de Comandos
+
+### Comando `history`
+
+- Exibe os comandos mais recentes em ordem de execução
+- Sintaxe: `$ history`
+
+![history.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4350216-642e-46d1-b1d4-e9dcdb890136/history.png)
+
+Na saída desse comando, todos o histórico de comando é apresentado por um número identificador e o nome de comando. Para executar um desses comandos usa-se: `$ !número-do-comando`
+
+`$ echo $HISTFILE`: exibe o conteúdo da variável
+
+![echo $HISTFILE.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/755fbae3-3ed4-4ca9-8f31-dd6e522a715e/echo_HISTFILE.png)
+
+`$ history -c` : elimina o histórico da linha de comandos
+
+![history -c.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f549532-7884-43ee-88d7-c7f3c1244999/history_-c.png)
+
+### Shell *Bash*
+
+`$ echo $SHELL`: ver o shell que está em execução
+
+![echo $SHELL.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09809f84-90ed-41a4-9c5b-5f5776e1a7e3/echo_SHELL.png)
+
+**OBS:** sempre que o `$` é colocado a frente do comando `echo` significa que vamos ver o conteúdo de uma variável. Nesse caso específico, as informações do Shell estão dentro da variável shell.
+
+`$ type + nome-do-comando`: permite ver se o comando é interno do SHELL ou é externo
+
+`$ clear`: Limpa a tela
+
+O shell sabe a localização de todos os comandos, pois existem a variável `$PATH` onde todos os comandos se encontram no Linux
+
+`$ whereis nome-do-comando`: permite saber aonde um comando está localizado
+
+### **Variáveis de ambiente**
+
+<aside> 💡 Variáveis é tudo aquilo que é sempre alterado. Existem dois tipos de variáveis: global e locais.
+
+</aside>
+
+- **Variáveis locais:** encontra-se apenas em um `bash`
+- **Variáveis globais:** encontram-se em todos os `bash` do Shell
+
+`NOME-DA-VARIÁVEL=valor-da-variável`: declara uma variável:
+
+`echo $NUMERO`: exibe o conteúdo da variável
+
+![echo $NUMERO.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2b0d021-5cad-4df7-9ef4-f49f6ed2764c/echo_NUMERO.png)
+
+`export NOME-DA-VARIÁVEL`: transforma uma variável local em variável global.
+
+![export variável.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30c6a467-0e02-4c6c-a4b7-ffcff106c973/export_varivel.png)
+
+`$ env`: exibe as variáveis globais
+
+![env.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2ad73d8-06c6-4cd9-93d0-1ce2cdf838cc/env.png)
+
+**Variáveis mais importantes**
+
+- `SHELL:` mostra o shell
+- `PWD:` mostra o directório actual
+- `HOME:` directório do usuário
+- `PATH:` mostra caminhos dos directórios
+
+`$ set`: ver todas as variáveis do sistema
+
+### **Comandos Sequênciais**
+
+Sintaxe 1: `$ comando1; comando2; comando3`: mesmo que um comando falhe, todos os seguintes são executados
+
+![comandos sequencial sintaxe1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5267c74-9769-46e6-9f88-7b52e903d722/comandos_sequencial_sintaxe1.png)
+
+Sintaxe 2: `$ comando1 && comando2 && comando3`: quando o primeiro comando falhe, todos os outros não são executados
+
+![comandos sequencial sintaxe2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b31e5ac6-7741-430c-b43a-c74bae1e48c1/comandos_sequencial_sintaxe2.png)
+
+Sintaxe 3: `$ comando1 | | comando2  | | comando3`: o  comando precedente só é executado se o sucessor der erro
