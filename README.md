@@ -1,39 +1,7 @@
-# Desafio de Projecto
-## Sejam todos bem-vindos ao meu repositório :sunglasses: 
+# LPIC 1: Linux Administrator
+Anotações do curso preparatório para a certificação oficial da LPI 1 - Linux Administrator
 
-Nesse repositório apresento algum conteúdo em forma de lista que tenho aprendido aprendido. 
+O LPIC-1 é a primeira certificação no programa de certificação profissional em vários níveis do Linux do Linux Professional Institute (LPI). O LPIC-1 validará a capacidade do candidato de executar tarefas de manutenção na linha de comando, instalar e configurar um computador executando o Linux e configurar redes básicas.
 
-### Pensamento Computacional
-
-Aprendi que o pensamento computacional não é uma disciplina académica é uma habilidade genérica. 
-
-Os seus pilares são: 
-
-- **Decomposição:** Consiste em dividir grandes problemas em problemas menores
-- **Reconhecimento de padrões:** Isso é identificar simillaridades nas coisas no mesmo contexto ou em contextos diferentes
-- **Abstração**: Idealizar as necessidades dos usuários no meio de muitos requisitos
-- **Algoritmos:** Definir uma sequência lógica para  a resolução de um problema
-
-Quem usa o Pensamento Computacional desenvolve habilidades como:
-
-- Pensamento analítico
-- Colaboração dentro da equipe
-- Criatividade 
-- É uma pessoa facilitadora
-
-### Lógica 
-
-Aprendi que na computação, a lógica é a organização e planeamento das instruções, assertivas em um algoritmo, para viabilizar a implementação de um programa. 
-
-Desse modo existem as seguintes técnicas de lógica de programação:
-
-- Técnica Linear
-- Técnica estruturada
-- Técnica Modular
-
-Muitos outros conhecimentos que obtive foram sobre fundamentos de algoritmos e linguagens de programação.
-
-
-
-_Obrigado por acessar ao meu repositório_ :+1: 
+![Certification-311411343-lpic-1](https://user-images.githubusercontent.com/66226187/187565038-23c252a0-d7a3-4052-9731-4af75d992c30.jpg)
 
